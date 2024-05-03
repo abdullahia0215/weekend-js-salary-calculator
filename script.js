@@ -42,6 +42,8 @@ function addEmployeeData (event){
 
 function removeEmployeeData (event){
     event.target.closest('tr').remove();
-    console.log('remove button')
+    totalSalaries -= Number(employeeSalary.value);
+    // console.log('remove button')
+    console.log(`new salaries total:${totalSalaries}`)
 }
 
