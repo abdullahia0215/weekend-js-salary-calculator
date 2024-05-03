@@ -30,4 +30,10 @@ function addEmployeeData (event){
     <td>${employeeSalary.value}</td>
     </tr>`
 
+    firstName.value='';
+    lastName.value='';
+    employeeID.value='';
+    employeeTitle.value='';
+    employeeSalary.value='';
+
 }
