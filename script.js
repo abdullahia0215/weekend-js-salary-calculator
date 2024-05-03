@@ -30,15 +30,18 @@ function addEmployeeData (event){
     <td>${employeeID.value}</td>
     <td>${employeeTitle.value}</td>
     <td>${employeeSalary.value}</td>
+    <td><button onClick="removeEmployeeData(event)">Delete</button></td>
     </tr>`
-
-
-
     // firstName.value='';
     // lastName.value='';
     // employeeID.value='';
     // employeeTitle.value='';
     // employeeSalary.value='';
     console.log(totalSalaries)
-   
 }
+
+function removeEmployeeData (event){
+    event.target.closest('tr').remove();
+    console.log('remove button')
+}
+
