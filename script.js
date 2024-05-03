@@ -1,10 +1,3 @@
-onReady();
-
-
-function onReady(){
-    console.log('java is ready')
-}
-
 
 
 let totalSalaries = 0;
@@ -17,6 +10,19 @@ let employeeTitle = document.getElementById("employee-title")
 let employeeSalary = (document.getElementById("employee-salary"));
 
 let employeeTable = document.getElementById("employee-table")
+let salaryDiv = document.getElementById("totalSalariesDiv")
+
+onReady();
+
+
+function onReady(){
+    console.log('java is ready')
+    displayTotalSalaries();
+}
+
+
+
+
 
 
 
@@ -38,6 +44,8 @@ function addEmployeeData (event){
     // employeeTitle.value='';
     // employeeSalary.value='';
     console.log(totalSalaries)
+    displayTotalSalaries();
+    
 }
 
 function removeEmployeeData (event){
@@ -45,5 +53,12 @@ function removeEmployeeData (event){
     totalSalaries -= Number(employeeSalary.value);
     // console.log('remove button')
     console.log(`new salaries total:${totalSalaries}`)
+    displayTotalSalaries();
+}
+
+function displayTotalSalaries (){
+    totalSalariesDiv.innerHTML -= `<p>Total Monthly: ${totalSalaries}</p>`
+    totalSalariesDiv.innerHTML += `<p>Total Monthly: ${totalSalaries}</p>`
+
 }
 
