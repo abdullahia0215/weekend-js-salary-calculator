@@ -1,0 +1,65 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: white;
+}
+
+header {
+  background-color: gray;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main styles */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Input form styles */
+#input-forms-and-button {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: rgb(0, 81, 255);
+  color: white;
+  margin-top: 25px;
+}
+
+#employee-table {
+  width: 750px;
+}
+
+#employee-table th,
+#employee-table td {
+  padding: 8px;
+  border: 1px solid black;
+}
+
+#employee-table th {
+  background-color: white;
+  font-weight: bold;
+}
+
+#employee-table button {
+  padding: 6px 10px;
+  background-color: red;
+  color: white;
+}
+
+#totalSalariesDiv {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
