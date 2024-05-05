@@ -54,11 +54,10 @@ function removeEmployeeData (event){
     // console.log('remove button')
     console.log(`new salaries total:${totalSalaries}`)
     displayTotalSalaries();
+   
 }
 
 function displayTotalSalaries (){
-    totalSalariesDiv.innerHTML -= `<p>Total Monthly: ${totalSalaries}</p>`
-    totalSalariesDiv.innerHTML += `<p>Total Monthly: ${totalSalaries}</p>`
-
+    salaryDiv.innerHTML = `<p>Total Monthly: ${totalSalaries}</p>`
 }
 
