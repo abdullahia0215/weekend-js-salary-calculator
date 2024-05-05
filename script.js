@@ -44,18 +44,18 @@ function addEmployeeData (event){
     // employeeTitle.value='';
     // employeeSalary.value='';
     console.log(totalSalaries)
-    displayTotalSalaries();
+    displayTotalSalaries(event);
     
 }
 
-function removeEmployeeData (event){
-    event.target.closest('tr').remove();
-    totalSalaries -= Number(employeeSalary.value);
-    // console.log('remove button')
-    console.log(`new salaries total:${totalSalaries}`)
+function removeEmployeeData(event) {
+    const row = event.target.closest('tr');
+    const salaryToRemove = Number(row.children[4].textContent); 
+    row.remove();
+    totalSalaries -= salaryToRemove;
     displayTotalSalaries();
-   
 }
+
 
 function displayTotalSalaries (){
     salaryDiv.innerHTML = `<p>Total Monthly: ${totalSalaries}</p>`
