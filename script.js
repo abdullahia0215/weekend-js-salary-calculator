@@ -40,7 +40,7 @@ function addEmployeeData(event) {
 
 function removeEmployeeData(event) {
   const row = event.target.closest("tr");
-  const salaryToRemove = Number(row.children[4].textContent);
+  const salaryToRemove = Number(row.children[4].innerText);
   row.remove();
   totalSalaries -= salaryToRemove;
   displayTotalSalaries();

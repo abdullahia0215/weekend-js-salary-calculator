@@ -12,16 +12,17 @@
     <main>
       <section id="input-forms-and-button">
         <form>
-          <input placeholder="First Name" id="first-name" />
-          <input placeholder="Last Name" id="last-name" />
-          <input placeholder="ID" id="employee-id" />
-          <input placeholder="Title" id="employee-title" />
+          <input placeholder="First Name" id="first-name" required/>
+          <input placeholder="Last Name" id="last-name" required/>
+          <input placeholder="ID" id="employee-id" required/>
+          <input placeholder="Title" id="employee-title" required/>
           <input
             placeholder="Annual Salary"
             id="employee-salary"
             type="number"
+            required
           />
-          <button onclick="addEmployeeData(event);">Submit</button>
+          <button type="submit" onclick="addEmployeeData(event);">Submit</button>
         </form>
       </section>
       <section>
