@@ -47,5 +47,5 @@ function removeEmployeeData(event) {
 }
 
 function displayTotalSalaries() {
-  salaryDiv.innerHTML = `<p>Total Monthly: ${totalSalaries}</p>`;
+  salaryDiv.innerHTML = `<p>Total Monthly: ${totalSalaries / 12}</p>`;
 }
